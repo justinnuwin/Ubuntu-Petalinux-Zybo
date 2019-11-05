@@ -1,0 +1,3 @@
+petalinux-*.run
+project/Petalinux-Zybo/
+project/rootfs
