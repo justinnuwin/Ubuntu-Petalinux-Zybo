@@ -1,4 +1,8 @@
-# CPE442 Zybo-7000 Set up
+# Petalinux Ubuntu Zybo
+
+Justin Nguyen
+
+This repository builds Petalinux and pulls Ubuntu 18.04-minimal for armhf for the Digilent Zybo-7000 development board.
 
 ## Build bootloader, kernel, rootfs
 
