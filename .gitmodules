@@ -1,3 +1,6 @@
 [submodule "petalinux-docker"]
 	path = petalinux-docker
 	url = https://github.com/z4yx/petalinux-docker.git
+[submodule "project/Petalinux-Zybo"]
+	path = project/Petalinux-Zybo
+	url = https://github.com/Digilent/Petalinux-Zybo.git
