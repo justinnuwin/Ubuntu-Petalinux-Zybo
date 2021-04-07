@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ZYBO_BOARD=Zybo-Z7-10  # Zybo, Zybo-Z7-10, or Zybo-Z7-20
+
 git submodule update --init petalinux-docker
 
 cp petalinux-docker/Dockerfile petalinux-docker/accept-eula.sh .
@@ -25,7 +27,7 @@ docker build --build-arg PETA_VERSION=$peta_version --build-arg PETA_RUN_FILE=$p
 rm -f Dockerfile accept-eula.sh
 
 # Yocto can't build git dependencies with nested submodules, so we will clone
-git clone --recursive https://github.com/Digilent/Petalinux-Zybo.git project/Petalinux-Zybo/
+git clone --recursive https://github.com/Digilent/Petalinux-$ZYBO_BOARD.git project/Petalinux-Zybo/
 git -C project/Petalinux-Zybo/ checkout v2017.4-1
 
 
